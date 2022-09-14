@@ -6,6 +6,7 @@ set smartcase
 set noswapfile
 set shiftwidth=2
 set tabstop=2
+set expandtab
 set scrolloff=10
 set splitright
 set splitbelow
@@ -18,6 +19,8 @@ noremap <Leader>s :so %<Enter>
 noremap <Leader>v :e $MYVIMRC<Enter>
 noremap <Leader>c :!gcc -std=c99 -O2 %<Enter>
 noremap <Leader>e :!./a.out<Enter>
+noremap <Leader>n :n<Enter>
+noremap <Leader>p :N<Enter>
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 inoremap ( ()<ESC>i
