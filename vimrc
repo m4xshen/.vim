@@ -1,6 +1,14 @@
+syntax on
+colorscheme catppuccin_mocha
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
+let g:NERDTreeWinSize = 19
+let NERDTreeMinimalUI = 1
+let g:netrw_dirhistmax = 0
+
 set number
 set relativenumber
 set noswapfile
+set cursorlineopt=number
 set ignorecase
 set smartcase
 set shiftwidth=2
@@ -10,19 +18,15 @@ set expandtab
 set scrolloff=10
 set splitright
 set splitbelow
-set nocursorline
 set incsearch
 set termguicolors
+set wildmenu
+set noshowmode
 set laststatus=2
 set guicursor=""
 set t_u7=
-
-syntax on
-colorscheme catppuccin_mocha
-let g:lightline = {'colorscheme': 'catppuccin_mocha'}
-let g:netrw_winsize = 20
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
+set encoding=UTF-8
+set fillchars+=vert:\ 
 
 let mapleader=" "
 noremap <silent> <Leader>w :write<Enter>
@@ -30,7 +34,7 @@ noremap <silent> <Leader>s :source %<Enter>
 noremap <silent> <Leader>v :edit $MYVIMRC<Enter>
 noremap <silent> <Leader>n :next<Enter>
 noremap <silent> <Leader>p :Next<Enter>
-noremap <silent> <Leader>l :Lexplore<Enter>
+noremap <silent> <Leader>l :NERDTreeToggle<Enter>
 noremap <Leader>f :find 
 noremap <Leader>h :vertical help 
 
