@@ -8,7 +8,6 @@ let g:netrw_dirhistmax = 0
 set number
 set relativenumber
 set noswapfile
-set cursorlineopt=number
 set ignorecase
 set smartcase
 set shiftwidth=2
@@ -19,9 +18,9 @@ set scrolloff=10
 set splitright
 set splitbelow
 set incsearch
-set termguicolors
 set wildmenu
 set noshowmode
+set noesckeys
 set laststatus=2
 set guicursor=""
 set t_u7=
@@ -38,20 +37,11 @@ noremap <silent> <Leader>l :NERDTreeToggle<Enter>
 noremap <Leader>f :find 
 noremap <Leader>h :vertical help 
 
-inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {}<ESC>i
-
 vnoremap K :move'<-2<CR>gv=gv
 vnoremap J :move'>+1<CR>gv=gv
 
 autocmd FileType c noremap <buffer> <silent> <Leader>c :!gcc -std=c99 -O2 %<Enter>
 autocmd FileType c noremap <buffer> <silent> <Leader>e :!./a.out<Enter>
-
-autocmd CmdlineEnter /,\? :set hlsearch
-autocmd CmdlineLeave /,\? :set nohlsearch
 
 iabbrev itn int
 iabbrev retunr return 
