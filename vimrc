@@ -13,6 +13,7 @@ set smartcase
 set shiftwidth=2
 set tabstop=2
 set autoindent
+set smartindent
 set expandtab
 set scrolloff=10
 set splitright
@@ -36,6 +37,12 @@ noremap <silent> <Leader>p :Next<Enter>
 noremap <silent> <Leader>l :NERDTreeToggle<Enter>
 noremap <Leader>f :find 
 noremap <Leader>h :vertical help 
+
+"inoremap ( ()<ESC>i
+"inoremap [ []<ESC>i
+"inoremap { {}<ESC>i
+"inoremap " ""<ESC>i
+"inoremap ' ''<ESC>i
 
 vnoremap K :move'<-2<CR>gv=gv
 vnoremap J :move'>+1<CR>gv=gv
